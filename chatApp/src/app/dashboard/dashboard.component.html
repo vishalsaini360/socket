@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+
+<div class="WrapperArea">
+    <div class="WrapperBox">
+        <div class="Small-Wrapper">
+            <h4 class="Title">Dashboard</h4>          
+
+            <div class="DashboardArea"> 
+                <div class="row">
+                    <div class="col-sm-4">
+                        <aside>
+                            <h4>Total Users </h4>
+                            <h2 id="number1">{{data?.totalUser}}</h2>
+                            <h5><span>Total Number of Users :</span> {{data?.totalUser}}</h5>
+                        </aside>     
+                    </div>
+                    <div class="col-sm-4">
+                        <aside>
+                            <h4>Premium Users</h4>
+                            <h2 id="number2">{{data?.activeUser}}</h2>
+                            <h5><span>Total Premium Users :</span> {{data?.activeUser}}</h5>
+                        </aside>
+                    </div>
+                    <div class="col-sm-4">
+                        <aside>
+                            <h4>Notifications  </h4>
+                            <h2 id="number3">{{data?.notification}}</h2>
+                            <h5><span>Notifications  :</span> {{data?.notification}}</h5>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+                                  
+        </div>
+    </div>
+</div>

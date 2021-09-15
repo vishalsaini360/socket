@@ -1,0 +1,80 @@
+<div class="SidenavBar">
+    <ul style="    margin-top: 142px;">
+
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/dashboard']">
+                <span><i class="fa fa-tachometer"></i></span> Dashboard
+            </a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/user-management']">
+                <span><i class="fa fa-user"></i></span> User Management
+            </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/create-room']">
+                <span><i class="fa fa-user"></i></span> Create Room
+            </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/room-list']">
+                <span><i class="fa fa-user"></i></span> Room List
+            </a>
+        </li>
+
+        <!-- <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/user-management']">
+                <span><i class="fa fa-user"></i></span> User Management
+            </a>
+        </li> -->
+
+        <!-- <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/training-plan-management']">
+                <span><i class="fa fa-tachometer"></i></span> Training Plan Management
+            </a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/push-notification']">
+                <span><i class="fa fa-tachometer"></i></span> Push Notifications
+            </a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/subscription']">
+                <span><i class="fa fa-tachometer"></i></span> Subscription Management
+            </a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/report']">
+                <span><i class="fa fa-tachometer"></i></span> Reports Management
+            </a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/content-management']">
+                <span><i class="fa fa-font"></i></span> Static content Management
+            </a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/notification-management']">
+                <span><i class="fa fa-user"></i></span> Notifications Management
+            </a>
+        </li>
+
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/setting']">
+                <span><i class="fa fa-cog"></i></span> Settings
+            </a>
+        </li> -->
+
+        <li>
+            <a type="button" (click)="logout()">
+                <span><i class="fa fa-sign-out"></i></span> Logout
+            </a>
+        </li>
+    </ul>
+</div>

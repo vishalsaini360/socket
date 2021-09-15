@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+
+<div class="WrapperArea">
+    <div class="WrapperBox">
+        <div class="Small-Wrapper">
+            <h4 class="Title">Notification Management</h4>
+
+            <div class="NotificationArea">
+                <div class="NotificationForm">
+                    <h4>Send Notifications</h4>
+
+                    <form [formGroup]="allSendNotificationForm">
+
+                        <div class="form-group">
+                            <label for="">Title </label>
+                            <input type="text" title="Enter title" class="form-control" formControlName="title"
+                                placeholder="Enter title">
+                            <div class="text-danger"
+                                *ngIf="allSendNotificationForm.get('title').hasError('required') && (allSendNotificationForm.get('title').dirty)">
+                                *Title is required
+                            </div>
+                        </div>
+
+                        
+
+                        <button type="button" (click)="allSendNotification(allSendNotificationForm.value)">Send
+                            Notification</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

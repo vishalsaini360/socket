@@ -1,0 +1,27 @@
+<div class="Header">
+    <div class="Logo">
+        <img src="assets/images/unnamed.gif">
+    </div>
+    <div class="Navigation">
+        <!-- <div class="Bell">
+            <a [routerLink]="['/notification-management']">
+                <i aria-hidden="true" class="fa fa-bell"></i>
+                <span class="Count">15</span>
+            </a>
+        </div> -->
+        
+        
+        <div class="Avater">
+            <a href="javascript:void(0);">
+                <figure><img src="{{profilePic}}"></figure>{{name}} </a>
+            <ul>
+                <li>
+                    <figure><img src="{{profilePic}}"></figure>
+                    <h4>{{name}} <span>Administrator</span></h4>
+                </li> 
+                <li><a (click)="logout()" type="button"><span><i class="fa fa-sign-out"></i></span> Logout</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

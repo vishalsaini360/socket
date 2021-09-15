@@ -1,0 +1,109 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+
+<div class="WrapperArea">
+    <div class="WrapperBox">
+        <div class="Small-Wrapper">
+            <h4 class="Title">User Details</h4>
+
+            <div class="DetailsArea">
+                <ul>
+                    <li>
+                        <figure style="height: 110px;
+                        width: 122px;
+                        margin-left: 638px;"><img src="{{userDetail?.profilePic}}"></figure>
+                    </li>
+
+                    <li>
+                        <span>Device Id </span>{{userDetail?.mobileId}}
+                    </li>
+
+                    <li>
+                        <span>Date of the registration </span>{{userDetail?.createdAt | date:'dd/MM/yyyy h:mm a'}}
+                    </li>
+
+
+
+                    <li>
+                        <span>Account Type </span>{{userDetail?.premimumStatus}}
+                    </li>
+
+                    <li>
+                        <span>Age </span>{{userDetail?.age}}
+                    </li>
+
+                    <li>
+                        <span>Weight </span>{{userDetail?.weight}} {{userDetail?.weightMeasuremet}}
+                    </li>
+
+                    <li>
+                        <span>Height </span> {{userDetail?.height}} {{userDetail?.heightMeasurement}}
+                    </li>
+
+                    <li>
+                        <span>Gender </span> {{userDetail?.gender}}
+                    </li>
+
+                    <li>
+                        <span>Workout Frequency with preferred days </span>
+                    </li>
+                    <li *ngIf="userDetail?.weekType == 'Week'">
+                        <span>Day</span>
+                        <ul class="mainWeek">
+                            <li>
+                                <span class="wednesdayClass" *ngFor="let day of userDetail?.days">
+                                    {{day}}
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li *ngIf="userDetail?.weekType == 'Month'">
+                        <span>Week1</span>
+                        <ul class="mainWeek">
+                            <li>
+                                <span class="wednesdayClass" *ngFor="let day of userDetail?.week1Days">
+                                    {{day}}
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li *ngIf="userDetail?.weekType == 'Month'">
+                        <span>Week2</span>
+                        <ul class="mainWeek">
+                            <li>
+                                <span class="wednesdayClass" *ngFor="let day of userDetail?.week2Days">
+                                    {{day}}
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li *ngIf="userDetail?.weekType == 'Month'">
+                        <span>Week3</span>
+                        <ul class="mainWeek">
+                            <li>
+                                <span class="wednesdayClass" *ngFor="let day of userDetail?.week3Days">
+                                    {{day}}
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li *ngIf="userDetail?.weekType == 'Month'">
+                        <span>Week4</span>
+                        <ul class="mainWeek">
+                            <li>
+                                <span class="wednesdayClass" *ngFor="let day of userDetail?.week4Days">
+                                    {{day}}
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

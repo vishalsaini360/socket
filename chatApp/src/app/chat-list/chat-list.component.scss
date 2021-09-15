@@ -1,0 +1,54 @@
+#form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 269px; right: 34px; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      #input:focus { outline: none; }
+      #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages > li { padding: 0.5rem 1rem; }
+      // #messages > li:nth-child(odd) { background: #efefef; }
+      
+
+
+      .message {
+            padding: 18px !important; 
+            border-radius: 4px; 
+            margin-bottom: 40px;
+            max-width: 300px;
+            position: relative;
+        }
+        .incoming {
+            background: #8F8BE8;
+            color: #fff;  
+        }
+        .outgoing {
+            background: #e9eafd;
+            color: #787986;
+            margin-left: auto;
+        }
+        .message h4 {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            color: #333;
+            font-size: 14px;
+        }
+        .message h6 {
+            position: absolute;
+            top: 58px;
+            left: 0;
+            color: #333;
+            font-size: 14px;
+        }
+      
+        p {
+            margin-top: 0;
+            margin-bottom: 0rem;
+        }
+        button{
+            float: right;
+            background: red;
+            color: white;
+            padding: 3px 7px;
+            border-radius: 9px;
+            border: 1px solid red;
+        }
